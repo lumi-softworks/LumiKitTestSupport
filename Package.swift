@@ -11,7 +11,7 @@ import PackageDescription
 // 两者若合并成一个 target，测试辅助代码会跟着打进 App；反过来把守卫放进
 // testTarget，各插件在生产代码里就无从引用。边界必须切开。
 let package = Package(
-    name: "KitTestSupport",
+    name: "LumiKitTestSupport",
     platforms: [.macOS("14.0"), .iOS(.v17)],
     products: [
         .library(name: "KitTestIsolation", targets: ["KitTestIsolation"]),
